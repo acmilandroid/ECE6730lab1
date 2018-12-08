@@ -1,0 +1,64 @@
+Process 0 sent ball to process 1
+Process 0 received ball from process 15
+Process 1 received ball from process 0
+Process 1 sent ball to process 2
+Process 2 received ball from process 1
+Process 2 sent ball to process 3
+Process 3 received ball from process 2
+Process 3 sent ball to process 4
+Process 4 received ball from process 3
+Process 4 sent ball to process 5
+Process 5 received ball from process 4
+Process 5 sent ball to process 6
+Process 6 received ball from process 5
+Process 6 sent ball to process 7
+Process 7 received ball from process 6
+Process 7 sent ball to process 8
+Process 8 received ball from process 7
+Process 8 sent ball to process 9
+Process 9 received ball from process 8
+Process 9 sent ball to process 10
+Process 10 received ball from process 9
+Process 10 sent ball to process 11
+Process 11 received ball from process 10
+Process 11 sent ball to process 12
+Process 12 received ball from process 11
+Process 12 sent ball to process 13
+Process 13 received ball from process 12
+Process 13 sent ball to process 14
+Process 14 received ball from process 13
+Process 14 sent ball to process 15
+Process 15 received ball from process 14
+Process 15 sent ball to process 0
+Process 2 took 0.390000 seconds
+Process 0 took 0.400000 seconds
+Process 1 took 0.400000 seconds
+Process 7 took 0.390000 seconds
+Process 3 took 0.400000 seconds
+Process 4 took 0.400000 seconds
+Process 5 took 0.400000 seconds
+Process 6 took 0.390000 seconds
+Process 14 took 0.370000 seconds
+Process 9 took 0.380000 seconds
+Process 11 took 0.370000 seconds
+Process 13 took 0.370000 seconds
+Process 12 took 0.380000 seconds
+Process 15 took 0.360000 seconds
+Process 8 took 0.380000 seconds
+Process 10 took 0.380000 seconds
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=4gb,ncpus=16,walltime=00:10:00
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cpupercent=400,cput=00:00:04,mem=784kb,ncpus=16,vmem=12908kb,walltime=00:00:01
+ 
+ 

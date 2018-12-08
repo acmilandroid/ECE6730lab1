@@ -1,0 +1,40 @@
+Basil Lin
+smallball README
+
+Before running this program on the Palmetto machines, the following
+command must be run first:
+
+module purge
+module add gcc/4.8.1
+module add openmpi/1.8..1
+
+These command ensure that the right compiler and MPI executeable
+are generated when attempting to run this program.
+
+To run this program, the program must first be compiled using the
+command:
+
+mpicc -g -Wall -Wstrict-prototypes -o smallball ./smallball.c
+
+After this command has been run, you can run the program either
+using the mpiexec command like so:
+
+mpiexec -n 4 ./smallball
+
+Alternatively, on the Palmetto machines, you can queue the task
+to be run using a .pbs file and the following commands:
+
+export PBS_O_WORKDIR=/home/basill/smallball
+qsub smallball.pbs
+
+Of course, the export command should be edited accordingly to set
+the correct output directory. After running these commands, the
+Palmetto machine will output a file names smallball.oXX, where XX
+is some number. This will contain the output contents of the
+executed program.
+
+It is important to note that while the program may run correctly,
+passing the ball from process 0 to n number of processes before
+returning the ball back to process 0, the printing may not follow
+the order of the ball being passed, so the output may look more
+or less out of order.
